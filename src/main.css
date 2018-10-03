@@ -1,0 +1,178 @@
+@import '../node_modules/normalize.css/normalize.css';
+@import '../node_modules/spoqa-han-sans/css/SpoqaHanSans-kr.css';
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #00d2ff;
+}
+
+html, body {
+  font-size: 16px;
+  word-break: keep-all;
+  font-family: Spoqa Han Sans, sans-serif;
+  letter-spacing: -0.3px;
+  color: #222222;
+  padding-bottom: 2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 960px) {
+  html, body {
+    font-size: 12px;
+  }
+}
+
+body:before {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 10px;
+  background: #00d2ff;
+  background: linear-gradient(to right, #3a7bd5, #00d2ff);
+}
+
+section {
+  padding: 0 2rem;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+a {
+  color: #3a7bd5;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00d2ff;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 4rem 0 2rem 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+h4 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+ }
+
+@media screen and (max-width: 960px) {
+   h4 {
+     font-size: 1.5rem
+   }
+}
+
+
+h5 {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+  color: #333333;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+ul > li {
+  position: relative;
+  padding: 0.2rem 0 0.2rem 1rem;
+}
+
+ul > li:before {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  content: '•';
+  color: #3a7bd5;
+}
+
+.container {
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.period-mark {
+  color: #3a7bd5;
+}
+
+.big-paragraph {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.row {
+  display: flex;
+  padding: 3rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.row-left {
+  flex-basis: 18rem;
+  padding-right: 1rem;
+  flex-shrink: 0;
+}
+
+.row-right {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row-left {
+    flex-basis: 100%;
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+}
+
+.other {
+  padding: 3rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.role {
+  display: block;
+}
+
+.project {
+  padding: 1.5rem 0;
+}
+
+.project:first-child {
+  padding-top: 0;
+}
+
+.time {
+  display: block;
+  margin-bottom: 1.5rem;
+}

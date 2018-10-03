@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "version": "0.0.0",
+  "repository": "https://github.com/HyunSeob/resume.git",
+  "author": "HyunSeob <mail@hyunseob.me>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "rm -rf docs; parcel build -d docs src/index.html"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0",
+    "spoqa-han-sans": "^2.1.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "cssnano": "^4.1.4",
+    "parcel-bundler": "^1.10.1",
+    "postcss-modules": "^1.4.1"
+  }
+}
