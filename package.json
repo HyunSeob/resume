@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "rm -rf docs; parcel build -d docs src/index.html"
+    "build": "rm -rf docs; parcel build -d docs --public-url /resume src/index.html"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
