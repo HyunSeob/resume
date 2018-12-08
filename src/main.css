@@ -1,5 +1,5 @@
-@import '../node_modules/normalize.css/normalize.css';
-@import '../node_modules/spoqa-han-sans/css/SpoqaHanSans-kr.css';
+@import "../node_modules/normalize.css/normalize.css";
+@import "../node_modules/spoqa-han-sans/css/SpoqaHanSans-kr.css";
 
 * {
   box-sizing: border-box;
@@ -9,21 +9,17 @@
   background: #00d2ff;
 }
 
-html, body {
+html,
+body {
   font-size: 16px;
   word-break: keep-all;
   font-family: Spoqa Han Sans, sans-serif;
   letter-spacing: -0.3px;
   color: #222222;
   padding-bottom: 2rem;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@media screen and (max-width: 960px) {
-  html, body {
-    font-size: 12px;
-  }
 }
 
 body:before {
@@ -31,7 +27,7 @@ body:before {
   z-index: 1;
   top: 0;
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 10px;
   background: #00d2ff;
@@ -62,6 +58,12 @@ h1 {
   line-height: 1.1;
 }
 
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
 h2 {
   font-size: 3rem;
   margin: 4rem 0 2rem 0;
@@ -75,21 +77,19 @@ h3 {
 h4 {
   font-size: 2rem;
   margin: 0 0 1rem 0;
- }
-
-@media screen and (max-width: 960px) {
-   h4 {
-     font-size: 1.5rem
-   }
 }
 
+@media screen and (max-width: 960px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
 
 h5 {
   font-size: 1.3rem;
   margin: 0 0 0.5rem 0;
   color: #333333;
 }
-
 
 ul {
   list-style: none;
@@ -107,7 +107,7 @@ ul > li:before {
   position: absolute;
   left: 0;
   display: inline-block;
-  content: '•';
+  content: "•";
   color: #3a7bd5;
 }
 
@@ -125,6 +125,12 @@ ul > li:before {
   font-size: 2rem;
   line-height: 1.4;
   font-weight: 500;
+}
+
+@media screen and (max-width: 960px) {
+  .big-paragraph {
+    font-size: 1.5rem;
+  }
 }
 
 .row {
