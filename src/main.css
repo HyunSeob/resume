@@ -1,5 +1,4 @@
 @import "../node_modules/normalize.css/normalize.css";
-@import "../node_modules/spoqa-han-sans/css/SpoqaHanSans-kr.css";
 
 * {
   box-sizing: border-box;
@@ -13,7 +12,10 @@ html,
 body {
   font-size: 16px;
   word-break: keep-all;
-  font-family: Spoqa Han Sans, sans-serif;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, Bazier Square,
+    Noto Sans KR, Segoe UI, Apple SD Gothic Neo, Roboto, Helvetica Neue, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
   letter-spacing: -0.3px;
   color: #222222;
   padding-bottom: 2rem;
